@@ -3,11 +3,20 @@
 A collection of my STM32 projects demonstrating various embedded systems concepts.
 
 ## 📊 Overview
-- **Total Projects:** 25+
-- **Microcontrollers:** STM32F103C8 (Blue Pill), STM32F4
+- **Total Projects:** 26+
+- **Microcontrollers:** STM32F103C8C6 (Blue Pill), STM32F4
 - **Development:** HAL, Bare-metal, FreeRTOS, CubeMX
+- **IDEs:** STM32CubeIDE, Keil
 
 ## 📁 Projects by Category
+
+### 🔹 IoT & Cloud Projects
+| Project | Description | Technologies |
+|---------|-------------|--------------|
+| [STM32_MicroSD_Cloud_Logger](https://github.com/rubin-khadka/STM32_MicroSD_Cloud_Logger) | Sensors data to SD card + ThingSpeak upload | ESP8266, MQTT, SD-card, FatFS, DHT11, MPU6050, DS3231, LCD, Buttons|
+| [STM32_BareMetal_ESP8266_MQTT_DHT11](https://github.com/rubin-khadka/STM32_BareMetal_ESP8266_MQTT_DHT11) | DHT11 sensor data to HiveMQ MQTT broker via ESP8266 | ESP8266, MQTT, DHT11, LCD, Bare-metal |
+| [STM32_ESP8266_DHT11_Thingspeak](https://github.com/rubin-khadka/STM32_ESP8266_DHT11_Thingspeak) | DHT11 to ThingSpeak | AT commands, ESP8266 |
+| [STM32_ESP8266_IP_ATCommand](https://github.com/rubin-khadka/STM32_ESP8266_IP_ATCommand) | ESP8266 driver | WiFi modem, AT commands |
 
 ### 🔹 FreeRTOS Projects
 | Project | Description | Key Features |
@@ -19,13 +28,6 @@ A collection of my STM32 projects demonstrating various embedded systems concept
 | [STM32_FreeRTOS_Counting_Semaphore](https://github.com/rubin-khadka/STM32_FreeRTOS_Counting_Semaphore) | Resource pool management | ISR, multi-priority |
 | [STM32_FreeRTOS_Binary_Semaphore](https://github.com/rubin-khadka/STM32_FreeRTOS_Binary_Semaphore) | Task synchronization | CMSIS-RTOS |
 | [STM32_FreeRTOS_Task_Creation_Operations](https://github.com/rubin-khadka/STM32_FreeRTOS_Task_Creation_Operations) | Task management | Create/suspend/terminate |
-
-### 🔹 IoT & Cloud Projects
-| Project | Description | Technologies |
-|---------|-------------|--------------|
-| [STM32_MicroSD_Cloud_Logger](https://github.com/rubin-khadka/STM32_MicroSD_Cloud_Logger) | SD card + ThingSpeak upload | ESP8266, FatFS, DHT11, MPU6050 |
-| [STM32_ESP8266_DHT11_Thingspeak](https://github.com/rubin-khadka/STM32_ESP8266_DHT11_Thingspeak) | DHT11 to ThingSpeak | AT commands, ESP8266 |
-| [STM32_ESP8266_IP_ATCommand](https://github.com/rubin-khadka/STM32_ESP8266_IP_ATCommand) | ESP8266 driver | WiFi modem, AT commands |
 
 ### 🔹 Multi-Sensor & Datalogger Projects
 | Project | Sensors | Features |
@@ -44,7 +46,6 @@ A collection of my STM32 projects demonstrating various embedded systems concept
 | [STM32_BareMetal_BlinkLed_STM32cubeIDE](https://github.com/rubin-khadka/STM32_BareMetal_BlinkLed_STM32cubeIDE) | Pure register-level, no HAL |
 | [STM32_DHT11_UART_BareMetal](https://github.com/rubin-khadka/STM32_DHT11_UART_BareMetal) | DHT11 with register access, UART output |
 | [STM32_Digital_Thermometer_BareMetal](https://github.com/rubin-khadka/STM32_Digital_Thermometer_BareMetal) | LM35 + 7-segment, register-level |
-| [STM32_UART_LCD_Dashboard](https://github.com/rubin-khadka/STM32_UART_LCD_Dashboard) | UART + LCD, DWT timers |
 
 ### 🔹 Additional STM32 Projects
 | Project | Description |
