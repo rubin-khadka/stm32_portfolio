@@ -3,12 +3,22 @@
 A collection of my STM32 projects demonstrating various embedded systems concepts.
 
 ## 📊 Overview
-- **Total Projects:** 26+
-- **Microcontrollers:** STM32F103C8C6 (Blue Pill), STM32F4
+- **Microcontrollers:** STM32F103C8T6 (Blue Pill), STM32F4
 - **Development:** HAL, Bare-metal, FreeRTOS, CubeMX
 - **IDEs:** STM32CubeIDE, Keil
+- **Protocols:** UART, I2C, SPI, Ethernet/TCP (Wiznet W5500), MQTT
+- **Peripherals:** ADC, DMA, GPIO, Timers, Interrupts, RTC
+- **Sensors:** DHT11, DS18B20, MPU6050, LM35, MQ-2, DS3231 RTC
+- **Storage:** SD Card (FatFS), W25Q64 Flash
+- **Cloud:** ThingSpeak, HiveMQ
 
 ## 📁 Projects by Category
+
+### 🔹 Ethernet & TCP/IP Projects
+| Project | Description | Technologies |
+|---------|-------------|--------------|
+| [STM32_W5500_TCP_Server](https://github.com/rubin-khadka/STM32_W5500_TCP_Server) | TCP server with W5500 Ethernet, MQ-2 gas sensor. Control LED and monitor gas remotely | W5500, TCP/IP, MQ-2, Ethernet |
+| [STM32_FreeRTOS_W5500_TCP_Server](https://github.com/rubin-khadka/STM32_FreeRTOS_W5500_TCP_Server) | Same as above but with FreeRTOS for task management | W5500, TCP/IP, FreeRTOS, Ethernet |
 
 ### 🔹 IoT & Cloud Projects
 | Project | Description | Technologies |
