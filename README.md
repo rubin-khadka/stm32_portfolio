@@ -3,25 +3,41 @@
 A collection of my STM32 projects demonstrating various embedded systems concepts.
 
 ## 📊 Overview
-- **Microcontrollers:** STM32F103C8T6 (Blue Pill), STM32F4
+- **Microcontrollers:** STM32F103C8T6 (Blue Pill), STM32F411CEU6
 - **Development:** HAL, Bare-metal, FreeRTOS, CubeMX
 - **IDEs:** STM32CubeIDE, Keil
-- **Protocols:** UART, I2C, SPI, Ethernet/TCP (Wiznet W5500), MQTT
+- **Protocols & Wireless:** UART, I2C, SPI, CAN, Ethernet/TCP, MQTT, WiFi
 - **Peripherals:** ADC, DMA, GPIO, Timers, Interrupts, RTC
 - **Sensors:** DHT11, DS18B20, MPU6050, LM35, MQ-2, DS3231 RTC
 - **Storage:** SD Card (FatFS), W25Q64 Flash
 - **Cloud:** ThingSpeak, HiveMQ
+- **Advanced:** Bootloaders, OTA Updates, CRC32, HTTP/REST API, JSON
 
 ## 📁 Projects by Category
 
-### 🔹 Ethernet & TCP/IP Projects
-| Project | Description | Technologies |
+### 🔹 CAN Bus Projects
+| Project | Description | Features |
 |---------|-------------|--------------|
+| [STM32_CAN_Sensor_Fusion](https://github.com/rubin-khadka/STM32_CAN_Sensor_Fusion) | Sensor fusion over CAN bus | CAN Bus |
+| [STM32_CAN_Communication](https://github.com/rubin-khadka/STM32_CAN_Communication) | CAN bus between two STM32: potentiometer → LED brightness via PWM | CAN Bus, PWM, Potentiometer, LED|
+
+### 🔹 Bootloaders & OTA Updates
+| Project | Description | Features |
+|---------|-------------|--------------|
+| [STM32_OTA_Bootloader_W5500](https://github.com/rubin-khadka/STM32_OTA_Bootloader_W5500) | OTA firmware updates via W5500 Ethernet | OTA, W5500, Ethernet, CRC32 |
+| [STM32_OTA_Bootloader_ESP8266](https://github.com/rubin-khadka/STM32_OTA_Bootloader_ESP8266) | OTA firmware updates via ESP8266 WiFi | OTA, ESP8266, W25Q64 flash, CRC32 |
+| [STM32_Custom_Bootloader_CRC](https://github.com/rubin-khadka/STM32_Custom_Bootloader_CRC) | Bare metal bootloader with CRC32 firmware verification | Bootloader, CRC32, Bare-metal |
+
+### 🔹 Ethernet & TCP/IP Projects
+| Project | Description | Features |
+|---------|-------------|--------------|
+| [STM32_W5500_HTTP_Server](https://github.com/rubin-khadka/STM32_W5500_HTTP_Server) | HTTP web server with real-time dashboard | HTTP, REST API, AJAX, W5500 |
+| [STM32_W5500_TCP_Client](https://github.com/rubin-khadka/STM32_W5500_TCP_Client) | TCP client fetching weather from Open-Meteo API | TCP Client, JSON, DNS, W5500 |
 | [STM32_W5500_TCP_Server](https://github.com/rubin-khadka/STM32_W5500_TCP_Server) | TCP server with W5500 Ethernet, MQ-2 gas sensor. Control LED and monitor gas remotely | W5500, TCP/IP, MQ-2, Ethernet |
 | [STM32_FreeRTOS_W5500_TCP_Server](https://github.com/rubin-khadka/STM32_FreeRTOS_W5500_TCP_Server) | Same as above but with FreeRTOS for task management | W5500, TCP/IP, FreeRTOS, Ethernet |
 
 ### 🔹 IoT & Cloud Projects
-| Project | Description | Technologies |
+| Project | Description | Features |
 |---------|-------------|--------------|
 | [STM32_MicroSD_Cloud_Logger](https://github.com/rubin-khadka/STM32_MicroSD_Cloud_Logger) | Sensors data to SD card + ThingSpeak upload | ESP8266, MQTT, SD-card, FatFS, DHT11, MPU6050, DS3231, LCD, Buttons|
 | [STM32_BareMetal_ESP8266_MQTT_DHT11](https://github.com/rubin-khadka/STM32_BareMetal_ESP8266_MQTT_DHT11) | DHT11 sensor data to HiveMQ MQTT broker via ESP8266 | ESP8266, MQTT, DHT11, LCD, Bare-metal |
@@ -29,7 +45,7 @@ A collection of my STM32 projects demonstrating various embedded systems concept
 | [STM32_ESP8266_IP_ATCommand](https://github.com/rubin-khadka/STM32_ESP8266_IP_ATCommand) | ESP8266 driver | WiFi modem, AT commands |
 
 ### 🔹 FreeRTOS Projects
-| Project | Description | Key Features |
+| Project | Description | Features |
 |---------|-------------|--------------|
 | [STM32_FreeRTOS_Software_Timer](https://github.com/rubin-khadka/STM32_FreeRTOS_Software_Timer) | Software timer examples | Timers, callbacks |
 | [STM32_FreeRTOS_Mutex](https://github.com/rubin-khadka/STM32_FreeRTOS_Mutex) | Mutex synchronization | Resource protection |
@@ -65,6 +81,3 @@ A collection of my STM32 projects demonstrating various embedded systems concept
 | [STM32_UART_LCD_Control_Panel](https://github.com/rubin-khadka/STM32_UART_LCD_Control_Panel) | UART command processing |
 | [STM32_UART_LCD_Dashboard](https://github.com/rubin-khadka/STM32_UART_LCD_Dashboard) | Register-level UART + LCD |
 
----
-
-*More projects added regularly.*
